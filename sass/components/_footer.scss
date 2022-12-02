@@ -2,10 +2,26 @@
     background-color: $common-color;
 
     &__main {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 70px;
         padding-top: 60px;
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 70px;
+        }
+    }
+    &__list {
+        display: contents;
+            
+        @media screen and (max-width: 1199px) {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+    &__address {
+        @media screen and (max-width:1199px) {
+            text-align: center;
+        }
     }
 }
 
@@ -59,16 +75,29 @@
     text-transform: uppercase;
 
     color: $secondary-color;
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
 }
 
 /* Footer Subscription */
 
 .subscription {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-
     color: $secondary-color;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        gap: 12px;
+    }
+
+    @media screen and (max-width:1199px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 58px;
+    }
 }
 
 .subscription__mail {
@@ -80,6 +109,10 @@
     line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
+    @media screen and (max-width:1199px) {
+        margin-bottom: 20px;
+    }
 }
 
 .subscription__mail label {
@@ -120,11 +153,7 @@
 }
 
 .subscription__btn {
-    transform: translateY(35px);
-
     display: flex;
-    text-align: center;
-    justify-content: center;
     width: 200px;
     height: 50px;
     padding: 10px 28px;
@@ -139,6 +168,10 @@
 
     background-color: $accent-color;
     color: $secondary-color;
+
+    @media screen and (min-width: 1200px) {
+        transform: translateY(35px);
+    }
 }
 
 .subscription__icon {
