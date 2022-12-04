@@ -20,12 +20,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 450px;
+
         height: 120px;
         margin-bottom: 30px;
         border-radius: 4px;
     
         background-color: $backgroundline-color;
+
+        @media screen and (min-width: 480px) {
+            width: 450px;
+        }
 
         @media screen and (min-width: 768px) {
             width: 354px;
@@ -55,7 +59,9 @@
     }
 
     &__text {
-        width: 354px;
+        @media screen and (min-width: 480px) {
+            width: 354px;
+        }
     
         font-size: 14px;
         line-height: 1.71;
