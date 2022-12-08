@@ -72,6 +72,10 @@
     padding: 40px;
 
     text-align: center;
+
+    @media screen and (max-width: 369px) {
+        padding: 40px 25px;
+    }
 }
 
 .modal__title {

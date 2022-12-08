@@ -12,6 +12,9 @@
     }
     &__list {
         display: contents;
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+        }
             
         @media screen and (max-width: 1199px) {
             display: flex;
@@ -21,6 +24,14 @@
     &__address {
         @media screen and (max-width:1199px) {
             text-align: center;
+        }
+    }
+    &__networks {
+        display: flex;
+        flex-direction: column;
+        
+        @media screen and (max-width: 767px) {
+            margin-bottom: 60px;
         }
     }
 }

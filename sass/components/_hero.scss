@@ -19,6 +19,10 @@
 
     color: $secondary-color;
 
+    @media screen and (max-width: 379px) {
+      padding: 0 15px;
+    }
+
     @media screen and (min-width: 480px) {
       width: 360px;
       height: 84px;
